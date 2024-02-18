@@ -7,6 +7,11 @@ const rand1  = ()=>{
 const rand2 = ()=>{
     return Math.floor(Math.random()*30)+40
 }
+const randz = ()=>{
+    return Math.floor(Math.random()*100)
+}
+
+
 // console.log(rand())
 
 // const 
@@ -17,5 +22,7 @@ btn.addEventListener('click',changePosition = ()=>{
     mydiv.forEach((x)=>{
         x.style.left = `${rand1()}%`
         x.style.top = `${rand2()}%`
+        x.style.zIndex = `${randz()}`
+        // console.log(randz())
     })
 })
